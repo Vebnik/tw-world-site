@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif;
+}
+
+body {
+  background-color: #8c8a8a;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 100px auto;
+}
