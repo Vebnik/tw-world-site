@@ -1,4 +1,6 @@
 
+
+
 .NavBar {
     background-color: var(--color-bg);
     width: 98%;
@@ -14,13 +16,13 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 700px;
+    width: 1000px;
     height: 100%;
 }
 
 .NavBtn {
     border-radius: 7px;
-    width: 20%;
+    width: 200px;
     height: 70%;
     background-color: #4f4f4f;
     cursor: pointer;
@@ -31,9 +33,9 @@
 
     transition-duration: 100ms;
 
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 10% auto;
+    align-content: center;
     align-items: center;
     padding: 5px;
 }

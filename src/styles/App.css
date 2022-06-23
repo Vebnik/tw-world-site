@@ -1,5 +1,7 @@
+@import "bootstrap/css/bootstrap.min.css";
 @import "navBarHeader/NavBar.css";
 @import "navBarHeader/Header.css";
+@import "General/General.css";
 @import "globalVar.css";
 @import "fontawesome/css/all.css";
 
@@ -14,7 +16,7 @@
 
 body {
   background-color: #8c8a8a;
-  height: 2000px;
+  height: max-content;
 }
 
 ::-webkit-scrollbar{ width: 15px; background-color: var(--color-bg) }
@@ -22,10 +24,13 @@ body {
 
 .App {
   display: grid;
-  grid-template-rows: 120px 60px auto;
+  grid-gap: 10px;
+  grid-template-rows: 120px 60px 1000px;
 }
 
 .ContentWrapper {
+  margin: auto;
+  border-radius: 7px;
   background-color: var(--color-bg);
   width: 98%;
   height: 98%;
