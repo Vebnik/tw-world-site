@@ -6,21 +6,24 @@
 }
 
 .Slider {
-    padding: 10px;
-    border-radius: 7px;
-    width: 98%;
+    padding: 7px;
+    width: 1500px;
     margin: auto;
     height: 240px;
 
-    background-color: #838080;
+    border-bottom: 4px #8c8a8a solid;
+    border-top: 4px #8c8a8a solid;
 }
 
 
 .listItem1 {
     margin: auto;
-    background-color: #363535;
     width: 98%;
     height: 220px;
-
     border-radius: 7px;
+    background: url("/media/bg-img.jpg");
+}
+
+.GeneralContent {
+
 }

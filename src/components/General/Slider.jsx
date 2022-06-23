@@ -3,31 +3,31 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Slider = () => {
 
+
+	const SlideContent = ({title, content, link}) => {
+		return (
+			<Carousel.Caption>
+				<h3>{title}</h3>
+				<p>{content}</p>
+				<a href={link}>Some link text</a>
+			</Carousel.Caption>
+		)
+	}
+
 	return (
 		<div className={'Slider'}>
-			<Carousel style={{height: '240px'}}>
+			<Carousel>
 				<Carousel.Item>
 					<div className={'listItem1'}/>
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-					</Carousel.Caption>
+					<SlideContent title={'First slide label'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} link={''}/>
 				</Carousel.Item>
 				<Carousel.Item>
 					<div className={'listItem1'}/>
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</Carousel.Caption>
+					<SlideContent title={'Second slide label'} content={'Lorem consectetur dolor sit amet, consectetur dolor elit.'} link={''}/>
 				</Carousel.Item>
 				<Carousel.Item>
 					<div className={'listItem1'}/>
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						</p>
-					</Carousel.Caption>
+					<SlideContent title={'Third slide label'} content={'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'} link={''}/>
 				</Carousel.Item>
 			</Carousel>
 		</div>
