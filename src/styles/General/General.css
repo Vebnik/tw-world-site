@@ -3,6 +3,9 @@
     margin-top: 10px;
     width: 98%;
     height: 98%;
+    display: grid;
+    grid-template-rows: 25% 5% auto;
+    grid-gap: 10px;
 }
 
 .Slider {
@@ -10,6 +13,7 @@
     width: 1500px;
     margin: auto;
     height: 240px;
+
 
     border-bottom: 4px #8c8a8a solid;
     border-top: 4px #8c8a8a solid;
@@ -24,6 +28,45 @@
     background: url("/media/bg-img.jpg");
 }
 
-.GeneralContent {
+.Divider {
+    margin: auto;
+    height: 100%;
+    width: 70%;
 
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    font-size: 30px;
+    color: #d9d2d2;
+    border-bottom: 4px solid  #535770;
+    border-top: 4px solid  #535770;
 }
+
+.GeneralContent {
+    height: 800px;
+}
+
+.FeedBack {
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    width: max-content;
+    overflow: scroll;
+}
+
+.FeedBackElement {
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #8c8a8a;
+    width: 1000px;
+    height: 120px;
+
+    border-radius: 7px;
+}
+

@@ -4,6 +4,7 @@
 @import "General/General.css";
 @import "globalVar.css";
 @import "fontawesome/css/all.css";
+@import "fontawesome/css/solid.css";
 
 
 
@@ -19,13 +20,15 @@ body {
   height: max-content;
 }
 
-::-webkit-scrollbar{ width: 15px; background-color: var(--color-bg) }
+::-webkit-scrollbar{ width: 16px; background-color: var(--color-bg)}
 ::-webkit-scrollbar-thumb{ background-color: #595555;}
+::-webkit-scrollbar-corner{ background-color: var(--color-bg);}
+
 
 .App {
   display: grid;
   grid-gap: 10px;
-  grid-template-rows: 120px 60px 1000px;
+  grid-template-rows: 120px 60px 1207px;
 }
 
 .ContentWrapper {
