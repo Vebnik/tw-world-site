@@ -1,0 +1,45 @@
+.Header {
+    background-color: var(--color-bg);
+    border-radius: 0px 0px 7px 7px;
+}
+
+.Logo {
+    margin-top: 0.5%;
+    margin-left: 5%;
+    font-size: 100px;
+
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+
+.infoHeader {
+    margin-top: 20px;
+    color: #8c8a8a;
+    font-size: 20px;
+    width: 1000px;
+    height: 50px;
+    border-radius: 7px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    row-gap: 5px;
+}
+
+.infoHeader>span {
+    width: 80%;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 15% auto;
+    align-items: center;
+    height: 100%;
+    border-bottom: 10px rgba(140, 138, 138, 0.14) solid;
+    transition-duration: 100ms;
+}
+
+.fa-battle-net {transition-duration: 100ms; }
+
+.fa-battle-net:hover { cursor: pointer; color: #8c8a8a; }
+
+.infoHeader>span:hover {
+    border-bottom: 10px rgb(129, 126, 126) solid;
+}

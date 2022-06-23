@@ -1,0 +1,49 @@
+
+.NavBar {
+    background-color: var(--color-bg);
+    width: 98%;
+    height: 98%;
+    border-radius: 7px;
+
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.BtnWrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 100%;
+}
+
+.NavBtn {
+    border-radius: 7px;
+    width: 20%;
+    height: 70%;
+    background-color: #4f4f4f;
+    cursor: pointer;
+    margin: auto;
+    font-size: 24px;
+    color: #d3d0d0;
+    border: 2px solid var(--color-bg);
+
+    transition-duration: 100ms;
+
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.NavBtn:hover {
+    background-color: #363535;
+    border: 2px solid #8c8a8a;
+}
+
+.btnIco {
+    font-size: 15px;
+    text-align: center;
+}

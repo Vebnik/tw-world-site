@@ -1,5 +1,7 @@
-@import "NavBar.css";
+@import "navBarHeader/NavBar.css";
+@import "navBarHeader/Header.css";
 @import "globalVar.css";
+@import "fontawesome/css/all.css";
 
 
 
@@ -12,11 +14,15 @@
 
 body {
   background-color: #8c8a8a;
+  height: 2000px;
 }
+
+::-webkit-scrollbar{ width: 15px; background-color: var(--color-bg) }
+::-webkit-scrollbar-thumb{ background-color: #595555;}
 
 .App {
   display: grid;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 120px 60px auto;
 }
 
 .ContentWrapper {
