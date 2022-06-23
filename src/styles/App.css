@@ -1,3 +1,8 @@
+@import "NavBar.css";
+@import "globalVar.css";
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,5 +16,11 @@ body {
 
 .App {
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 60px auto;
+}
+
+.ContentWrapper {
+  background-color: var(--color-bg);
+  width: 98%;
+  height: 98%;
 }

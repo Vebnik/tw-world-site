@@ -1,0 +1,18 @@
+
+.NavBar {
+    background-color: var(--color-bg);
+    width: 98%;
+    height: 98%;
+    border-radius: 7px;
+
+    margin: auto;
+
+}
+
+.NavBtn {
+    cursor: pointer;
+    margin: auto;
+    font-size: 24px;
+    background-color: transparent;
+    color: #d3d0d0;
+}
