@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function ModalForm({show, handleClose, children}) {
+function ModalForm({show, handleClose, children, setNedFeedBack}) {
 
 	return (
 		<>
@@ -15,8 +15,8 @@ function ModalForm({show, handleClose, children}) {
 					<Button variant="secondary" onClick={handleClose}>
 						Close
 					</Button>
-					<Button variant="primary" onClick={handleClose}>
-						Save Changes
+					<Button variant="primary" onClick={setNedFeedBack}>
+						Save new FeedBack
 					</Button>
 				</Modal.Footer>
 			</Modal>

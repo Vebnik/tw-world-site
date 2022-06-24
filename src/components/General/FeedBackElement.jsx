@@ -1,10 +1,13 @@
 import React from 'react';
 
-const FeedBackElement = () => {
+const FeedBackElement = ({config}) => {
+
+	const {email, name, comment} = config
+
 	return (
 		<div className={'FeedBackElement'}>
-			<span><i className={'fa fa-id-card'}/> Evsyukov Nikita Viktorovich</span>
-			<span><i className={'fa fa-list'}/> Tremble without understanding, and we won’t command a space suit.</span>
+			<span><i className={'fa fa-id-card'}/> {name} || {email}</span>
+			<span><i className={'fa fa-list'}/> {comment}</span>
 			<span><i className={'fa-solid fa-clock'}/> {new Date().toISOString()}</span>
 		</div>
 	)

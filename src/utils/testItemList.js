@@ -120,3 +120,46 @@ export const itemList = [
 			}
 	},
 ]
+
+export const feedList = [
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	},
+	{
+		"email": "nikita@gmail.com",
+		"name": "Nikita Evsyukov",
+		"comment": "Tets name is comments"
+	}
+]
