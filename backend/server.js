@@ -12,12 +12,10 @@ const createServer = () => {
 	app.use(json())
 
 	app.get('/getFeed', function (req, res) {
-
 		getFeed().then(data => res.send(data))
 	})
 
 	app.post('/saveFeed', function (req, res) {
-
 		saveFeed(req.body).then(ok => ok ? res.send({status: 200}) : {status: 401})
 	})
 

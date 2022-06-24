@@ -18,4 +18,5 @@ function NewFeedback({setName, setComment, setEmail}) {
 	)
 }
 
+
 export default NewFeedback;
