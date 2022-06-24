@@ -1,9 +1,16 @@
+const {GetDataBase} = require("../dbWork/createConnect")
 
-const tmp = []
 
 const saveFeed = async (data) => {
 	try {
-		tmp.push(data)
+		const db = new GetDataBase('feedSource')
+
+		const prom = new Promise(resolve => {
+			db.saveData(data, 'feedback_data')
+				.catch(err => console.log(err))
+		})
+
+		await Promise.all([prom])
 		return true
 	} catch (e) { return false }
 }

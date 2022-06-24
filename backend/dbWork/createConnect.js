@@ -15,7 +15,7 @@ class GetDataBase {
 		this.#dbInstance.run(`CREATE TABLE ${tableName} (feed_item JSON)`)
 	}
 
-	saveData(data, tableName) {
+	async saveData(data, tableName) {
 		const stmt = this.#dbInstance.prepare(`INSERT INTO ${tableName} VALUES (?)`)
 
 		stmt.run(JSON.stringify(data))
