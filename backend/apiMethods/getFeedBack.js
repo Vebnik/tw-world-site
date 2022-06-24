@@ -1,48 +1,16 @@
+const { GetDataBase } = require('../dbWork/createConnect')
 
 
 const getFeed = async () => {
-	return JSON.stringify([
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		},
-		{
-			"email": "nikita@gmail.com",
-			"name": "Nikita Evsyukov",
-			"comment": "Tets name is comments"
-		}
-	])
+	const db = new GetDataBase('feedSource')
+
+	const prom = new Promise(resolve => {
+		db.getData('feedback_data').then(data =>
+			resolve(JSON.stringify(data)))
+	})
+
+	await Promise.all([prom])
+	return prom
 }
 
 
