@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import NewFeedback from "./NewFeedForm";
 import ModalForm from "./ModalForm";
 import BtnShowModal from "./BtnShowModal";
 import FeedBackElement from "../General/FeedBackElement";
-import {feedList as testFeed} from "../../utils/testItemList";
+import {getFeed, saveFeed} from "../../utils/saveGetFeed";
 
 
 const Feedback = () => {
@@ -15,7 +15,7 @@ const Feedback = () => {
 	const [show, setShow] = useState(false)
 	const handleClose = () => setShow(false)
 	const handleShow = () => setShow(true)
-	const [feedList, setFeedList] = useState(testFeed)
+	const [feedList, setFeedList] = useState([])
 
 	const setNedFeedBack = (ev) => {
 		const feedBackModal = { email, name, comment }
@@ -23,7 +23,16 @@ const Feedback = () => {
 
 		console.log(feedBackModal)
 		setFeedList([...feedList, feedBackModal])
+
+		// to back
+		saveFeed(feedBackModal).catch(err => console.error(err))
 	}
+
+	const freshGetFeed = async () => getFeed().then(data => setFeedList(data))
+
+	useMemo(() => freshGetFeed().catch(err => console.error(err)), feedList)
+		.catch(err => console.error(err))
+
 
 	return (
 		<div className={'Feedback'}>
