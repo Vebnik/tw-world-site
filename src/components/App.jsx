@@ -3,6 +3,8 @@ import NavBar from "./navbar/NavBar";
 import Header from "./navbar/Header";
 import {useState} from "react";
 import General from "./General/General";
+import Footer from "./navbar/Footer";
+
 
 
 function App() {
@@ -12,10 +14,11 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <NavBar/>
+      <NavBar setPage={setPage} />
       <div className={'ContentWrapper'}>
         {page}
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -2,6 +2,7 @@
 @import "navBarHeader/NavBar.css";
 @import "navBarHeader/Header.css";
 @import "General/General.css";
+@import "Catalog/Catalog.css";
 @import "globalVar.css";
 @import "fontawesome/css/all.css";
 @import "fontawesome/css/solid.css";
@@ -20,9 +21,9 @@ body {
   height: max-content;
 }
 
-::-webkit-scrollbar{ width: 16px; background-color: var(--color-bg)}
-::-webkit-scrollbar-thumb{ background-color: #595555;}
-::-webkit-scrollbar-corner{ background-color: var(--color-bg);}
+::-webkit-scrollbar{ width: 0px;}
+::-webkit-scrollbar-thumb{width: 0px}
+::-webkit-scrollbar-corner{ width: 0px}
 
 
 .App {
@@ -37,4 +38,25 @@ body {
   background-color: var(--color-bg);
   width: 98%;
   height: 98%;
+}
+
+.myFooter {
+  background-color: var(--color-bg);
+  color: #d3d0d0;
+}
+
+.mediaContact {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+}
+
+.mediaContact>i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.myFooterContacts {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row-reverse;
 }
