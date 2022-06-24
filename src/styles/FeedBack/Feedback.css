@@ -1,0 +1,61 @@
+.Feedback {
+    display: grid;
+    grid-template-rows: 75px auto;
+}
+
+.addFeedback {
+    margin: auto;
+    margin-top: 10px;
+    width: 98%;
+    height: 98%;
+    background-color: #8c8a8a;
+    border-radius: 7px;
+}
+
+.addFeedback>button {
+    margin-top: 10px;
+    width: 400px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+}
+
+.NewFeedback {
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(3, 22%);
+}
+
+#floatingTextarea2 {
+    background-color: #757070;
+}
+
+#floatingInput {
+    background-color: #757070;
+}
+
+#floatingUser {
+    background-color: #757070;
+}
+
+.modal-content {
+    width: 540px;
+    background-color: #363535;
+    color: white;
+}
+
+.FeedBackWrapper {
+    height: 90%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+.FeedBackList {
+    margin: auto;
+}
