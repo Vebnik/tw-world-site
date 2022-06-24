@@ -2,6 +2,8 @@ import React from 'react';
 import NavBtn from "./NavBtn";
 import General from "../General/General";
 import Catalog from "../Catalog/Catalog";
+import Contact from "../Contacts/Contact";
+import Feedback from "../Feedback/Feedback";
 
 const NavBar = ({setPage}) => {
 
@@ -11,9 +13,9 @@ const NavBar = ({setPage}) => {
 				break
 			case 'Catalog': setPage(<Catalog/>)
 				break
-			case 'Contacts': setPage(<div/>)
+			case 'Contacts': setPage(<Contact/>)
 				break
-			case 'FeedBack': setPage(<div/>)
+			case 'FeedBack': setPage(<Feedback/>)
 				break
 		}
 	}

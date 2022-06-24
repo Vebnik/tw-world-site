@@ -3,6 +3,8 @@
 @import "navBarHeader/Header.css";
 @import "General/General.css";
 @import "Catalog/Catalog.css";
+@import "Contacts/Contacts.css";
+@import "FeedBack/Feedback.css";
 @import "globalVar.css";
 @import "fontawesome/css/all.css";
 @import "fontawesome/css/solid.css";

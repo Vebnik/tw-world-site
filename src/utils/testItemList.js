@@ -23,6 +23,30 @@ export const itemList = [
 				description: 'Deuss mori, tanquam velox pes. The sailor loots with hunger, desire the fortress until it hobbles.'
 			}
 	},
+	{item: 'Item 1', content:
+			{
+				picture: 'https://phonoteka.org/uploads/posts/2021-03/1616627428_43-p-fon-geometriya-46.jpg',
+				description: 'Rub the garlic with sichuan-style nutmeg, black pepper, basil, and baking powder making sure to cover all of it.'
+			}
+	},
+	{item: 'Item 1', content:
+			{
+				picture: 'https://phonoteka.org/uploads/posts/2021-03/1616627428_43-p-fon-geometriya-46.jpg',
+				description: 'Never shape the guru, for you cannot witness it.'
+			}
+	},
+	{item: 'Item 1', content:
+			{
+				picture: 'https://phonoteka.org/uploads/posts/2021-03/1616627428_43-p-fon-geometriya-46.jpg',
+				description: 'Wave cowardly like an old ale. Energy follows when you praise with mind.'
+			}
+	},
+	{item: 'Item 1', content:
+			{
+				picture: 'https://phonoteka.org/uploads/posts/2021-03/1616627428_43-p-fon-geometriya-46.jpg',
+				description: 'Deuss mori, tanquam velox pes. The sailor loots with hunger, desire the fortress until it hobbles.'
+			}
+	},
 	{item: 'Item 2', content:
 			{
 				picture: 'https://phonoteka.org/uploads/posts/2021-03/1616627428_43-p-fon-geometriya-46.jpg',
